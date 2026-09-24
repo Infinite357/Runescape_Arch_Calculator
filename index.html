@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Item XP Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<h1>Item XP Calculator</h1>
+
+<section class="card">
+    <h2>Upload Screenshot</h2>
+
+    <input type="file" id="screenshotInput" accept="image/*">
+    <button id="analyzeButton">Analyze</button>
+
+    <p id="status">Waiting for image...</p>
+</section>
+
+<section class="card">
+    <h2>Preview</h2>
+    <img id="previewImage" alt="Screenshot preview">
+</section>
+
+<section class="card">
+    <h2>Results</h2>
+    <div id="results"></div>
+</section>
+
+<!-- OpenCV.js -->
+<script async src="https://docs.opencv.org/4.x/opencv.js"></script>
+
+<script src="app.js"></script>
+</body>
+</html>
